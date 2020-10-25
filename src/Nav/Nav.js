@@ -12,10 +12,10 @@ const Nav = () => {
                 <Logo logo={MarkoLogo} alt={'Обувь оптом от производителя'} width={'217'} height={'48'}/>
                 <input type="search"/>
                 <ul>
-                    <li><NavLink to={'/'}><div></div><div>Личный кабинет</div></NavLink></li>
-                    <li><NavLink to={'/'}><div></div><div>Избранное</div></NavLink></li>
-                    <li><NavLink to={'/'}><div></div><div>Заказы</div></NavLink></li>
-                    <li><NavLink to={'/'}><div></div><div>380500</div></NavLink></li>  {/*Указывается цена со знаком валюты и значек грузовика а не карзины*/}
+                    <li><NavLink to={'/'}>Личный кабинет</NavLink></li>
+                    <li><NavLink to={'/'}>Избранное</NavLink></li>
+                    <li><NavLink to={'/'}>Заказы</NavLink></li>
+                    <li><NavLink to={'/'}>380500</NavLink></li>  {/*Указывается цена со знаком валюты и значек грузовика а не карзины*/}
                 </ul>
             </div>
             <div>

@@ -1,3 +1,18 @@
-.header {
-
+header {
+    background-image: linear-gradient(#f6f6f6 30px, transparent 30px);
 }
+
+.header {
+    margin: 0 auto;
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+

@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Header.module.css'
 import Nav from "../../Nav/Nav";
+import {NavLink} from "react-router-dom";
 
 const Header = props => {
     return(
@@ -8,17 +9,17 @@ const Header = props => {
         <header>
             <div className={classes.header}>
                 <div>+7 (499) 350-07-94</div>
-                <ul>
-                    <li>О компании</li>
-                    <li>Бренды</li>
-                    <li>Партнерам</li>
-                    <li>Доставка</li>
-                    <li>Контакты</li>
+                <ul className={classes.header__menu}>
+                    <li><NavLink to={'/'}>О компании</NavLink></li>
+                    <li><NavLink to={'/'}>Бренды</NavLink></li>
+                    <li><NavLink to={'/'}>Партнерам</NavLink></li>
+                    <li><NavLink to={'/'}>Доставка</NavLink></li>
+                    <li><NavLink to={'/'}>Контакты</NavLink></li>
                 </ul>
 
-                <Nav/>
-
             </div>
+            <Nav/>
+
         </header>
 
     )
