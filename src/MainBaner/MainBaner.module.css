@@ -1,0 +1,65 @@
+.mainBanner {
+    padding: 40px 0;
+    background-color: #f6f6f6;
+}
+
+.hero {
+    width: 50%;
+}
+
+.hero  h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--accent-red);
+    font-size: 50px;
+    line-height: 1;
+}
+
+.hero h2 {
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0;
+    color: var(--basic-grey);
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.hero p {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    color: var(--basic-grey-light);
+    font-size: 14px;
+}
+
+.hero a {
+    margin-right: 10px;
+    padding: 12px 30px;
+    box-sizing: border-box;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--accent-red);
+    border-radius: 5px;
+    color: var(--basic-white);
+    font-size: 14px;
+}
+
+.hero a:hover,
+.hero a:active {
+    background-color: var(--basic-grey);
+}
+
+.hero a:first-of-type {
+    background-color: var(--basic-grey);
+}
+
+.hero a:first-of-type:hover,
+.hero a:first-of-type:active {
+    background-color: var(--accent-red);
+}
+
+.mainBanner img {
+    margin-right: -55px;
+}

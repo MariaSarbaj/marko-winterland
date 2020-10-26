@@ -1,0 +1,10 @@
+.wrapper{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.wrapper__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

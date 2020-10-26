@@ -1,12 +1,20 @@
 header {
-    background-image: linear-gradient(#f6f6f6 30px, transparent 30px);
+    background-image: linear-gradient(var(--background--grey) 40px, transparent 40px);
 }
 
 .header {
     margin: 0 auto;
-    width: 1160px;
+    width: var(--desktop-width);
+    min-height: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header__tel:hover,
+.header__tel:active {
+    color: var(--accent-red);
 }
 
 .header__menu {
@@ -16,3 +24,35 @@ header {
     list-style: none;
 }
 
+.header__menu li:not(:first-child) {
+    margin-left: 15px;
+}
+
+.header__menu a {
+    color: var(--basic-grey-light);
+}
+
+.header__menu a:hover,
+.header__menu a:active {
+    color: var(--accent-red);
+}
+
+.socials {
+    margin-left: 15px;
+    margin-right: auto;
+    padding-left: 15px;
+    border-left: 1px solid var(--basic-grey-light);
+}
+
+.socials a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.socials a {
+    color: var(--basic-grey-light);
+}
+
+.socials a:hover,
+.socials a:active {
+    color: var(--accent-red);
+}

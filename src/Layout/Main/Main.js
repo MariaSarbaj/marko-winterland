@@ -1,9 +1,10 @@
 import React from 'react';
+import MainScreen from "../MainScreen/MainScreen";
 
 const Main = props => {
     return(
         <main>
-            <h1>Main</h1>
+            <MainScreen/>
         </main>
 
     )

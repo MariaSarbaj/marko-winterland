@@ -8,28 +8,38 @@ const Nav = () => {
     return(
 
         <div className={classes.nav}>
-            <div>
+            <div className={classes.usermenu}>
                 <Logo logo={MarkoLogo} alt={'Обувь оптом от производителя'} width={'217'} height={'48'}/>
-                <input type="search"/>
+                <input className={classes.searchform__input} type="search" results={5}/>
                 <ul>
-                    <li><NavLink to={'/'}>Личный кабинет</NavLink></li>
-                    <li><NavLink to={'/'}>Избранное</NavLink></li>
-                    <li><NavLink to={'/'}>Заказы</NavLink></li>
-                    <li><NavLink to={'/'}>380500</NavLink></li>  {/*Указывается цена со знаком валюты и значек грузовика а не карзины*/}
+                    <li><NavLink to={'/'}>
+                        <i className="far fa-user"></i>
+                        Личный кабинет</NavLink></li>
+                    <li><NavLink to={'/'}>
+                        <i className="far fa-heart"></i>
+                        Избранное</NavLink></li>
+                    <li><NavLink to={'/'}>
+                        <i className="far fa-list-alt"></i>
+                        Заказы</NavLink></li>
+                    <li><NavLink to={'/'}>
+                        <i className="fas fa-dolly"></i>
+                        380 500 ₽</NavLink>
+                    </li>
                 </ul>
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><NavLink to={'/'}>Мужская обувь</NavLink></li>
-                        <li><NavLink to={'/'}>Женская обувь</NavLink></li>
-                        <li><NavLink to={'/'}>Детская обувь</NavLink></li>
-                        <li><NavLink to={'/'}>Спортивная обувь</NavLink></li>
-                        <li><NavLink to={'/'}>Новинки</NavLink></li>
-                        <li><NavLink to={'/'}>Акции</NavLink></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav className={classes.mainnav}>
+                <button>
+                    <i className="fas fa-stream"></i>
+                    Каталог</button>
+                <ul>
+                    <li><NavLink to={'/'}>Мужская обувь</NavLink></li>
+                    <li><NavLink to={'/'}>Женская обувь</NavLink></li>
+                    <li><NavLink to={'/'}>Детская обувь</NavLink></li>
+                    <li><NavLink to={'/'}>Спортивная обувь</NavLink></li>
+                    <li><NavLink to={'/'}>Новинки</NavLink></li>
+                    <li><NavLink className={classes.aActive} to={'/'}>Акции</NavLink></li>
+                </ul>
+            </nav>
         </div>
 
     )
