@@ -1,0 +1,31 @@
+.desc {
+    padding-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--basic-black);
+    font-size: 35px;
+}
+
+.desc__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.desc p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--basic-grey);
+}
+
+.desc h3 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+    color: var(--basic-grey);
+}
+
+.desc img {
+    border-radius: 5px;
+}

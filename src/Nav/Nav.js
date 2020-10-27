@@ -10,7 +10,7 @@ const Nav = () => {
         <div className={classes.nav}>
             <div className={classes.usermenu}>
                 <Logo logo={MarkoLogo} alt={'Обувь оптом от производителя'} width={'217'} height={'48'}/>
-                <input className={classes.searchform__input} type="search" results={5}/>
+                <input className={classes.searchform__input} type="search" results={5} placeholder={"Поиск..."}/>
                 <ul>
                     <li><NavLink to={'/'}>
                         <i className="far fa-user"></i>
