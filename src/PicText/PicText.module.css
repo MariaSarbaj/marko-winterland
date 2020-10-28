@@ -1,11 +1,15 @@
+.PicText__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .PicText__title {
     margin: 0;
     margin-bottom: 30px;
-    width: 78%;
-    color: #003488;
-    font-size: 36px;
+    color: var(--basic-black);
+    font-size: 32px;
     font-weight: 800;
-    text-transform: uppercase;
     line-height: 44px;
     letter-spacing: -1.08px;
     text-align: left;
@@ -13,12 +17,12 @@
 
 .PicText__text {
     margin: 0;
-    color: #193656;
+    color: var(--basic-grey);
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 20px;
 }
 
 .PicText__img {
-    margin-top: 20px;
+    margin: 20px auto 0;
 }

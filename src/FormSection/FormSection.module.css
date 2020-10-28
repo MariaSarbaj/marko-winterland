@@ -1,9 +1,7 @@
 .FormSection {
+    margin-top: 80px;
     margin-bottom: 80px;
     padding-top: 80px;
     padding-bottom: 73px;
-    background-color: #e5eaf1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: var(--background--grey);
 }
