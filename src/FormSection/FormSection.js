@@ -7,7 +7,7 @@ import Wrapper from "../Wrapper/Wrapper";
 
 const FormSection = () => {
     return(
-        <section className={classes.FormSection}>
+        <section id="form" className={classes.FormSection}>
             <Wrapper styleClass = {"wrapper wrapper__formSection"}>
                 <ContactFormBig
                     header={'Скачать каталог продукции'}
