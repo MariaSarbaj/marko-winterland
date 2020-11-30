@@ -22,48 +22,48 @@
     font-size: 16px;
 }
 
-.ContactFormBig form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
+/*.ContactFormBig form {*/
+/*    margin-top: 20px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
-.ContactFormBig input {
-    margin-bottom: 15px;
-    padding-left: 55px;
-    padding-right: 20px;
-    min-height: 50px;
-    color: var(--basic-grey);
-    box-shadow: 0 35px 50px 0 rgba(0,0,0,.07);
-    border: 1px solid var(--background--grey);
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 600;
-}
+/*.ContactFormBig input {*/
+/*    margin-bottom: 15px;*/
+/*    padding-left: 55px;*/
+/*    padding-right: 20px;*/
+/*    min-height: 50px;*/
+/*    color: var(--basic-grey);*/
+/*    box-shadow: 0 35px 50px 0 rgba(0,0,0,.07);*/
+/*    border: 1px solid var(--background--grey);*/
+/*    border-radius: 5px;*/
+/*    font-size: 14px;*/
+/*    font-weight: 600;*/
+/*}*/
 
-.ContactFormBig input:focus {
-    box-shadow: none;
-    border-color: inherit;
-}
+/*.ContactFormBig input:focus {*/
+/*    box-shadow: none;*/
+/*    border-color: inherit;*/
+/*}*/
 
-.ContactFormBig button {
-    margin-bottom: 30px;
-    background-color: var(--accent-red);
-    color: var(--basic-white);
-    border: none;
-    border-radius: 3px;
-    padding: 15px 20px;
-    font-weight: bold;
-    font-size: 18px;
-}
+/*.ContactFormBig button {*/
+/*    margin-bottom: 30px;*/
+/*    background-color: var(--accent-red);*/
+/*    color: var(--basic-white);*/
+/*    border: none;*/
+/*    border-radius: 3px;*/
+/*    padding: 15px 20px;*/
+/*    font-weight: bold;*/
+/*    font-size: 18px;*/
+/*}*/
 
 .ContactFormBig button:hover {
     background-color: var(--basic-grey);
 }
 
-.ContactFormBig button:active {
-    background-color: var(--basic-grey);
-}
+/*.ContactFormBig button:active {*/
+/*    background-color: var(--basic-grey);*/
+/*}*/
 
 .ContactFormBig ul {
     margin: 0;
