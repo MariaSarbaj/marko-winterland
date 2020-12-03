@@ -3,11 +3,27 @@
     padding: 20px 30px;
     box-sizing: border-box;
     border-radius: 5px;
-    width: var(--desktop-width);
+    width: 320px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: var(--basic-grey);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .LineForm {
+        width: 768px;
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1160px) {
+    .LineForm {
+        width: 1160px;
+    }
 }
 
 .LineForm h5 {
@@ -23,6 +39,7 @@
 }
 
 .LineForm a {
+    margin-top: 10px;
     margin-right: 10px;
     padding: 12px 30px;
     box-sizing: border-box;
@@ -38,4 +55,10 @@
 .LineForm a:hover,
 .LineForm a:active {
     background-color: var(--basic-grey-light);
+}
+
+@media (min-width: 768px) {
+    .LineForm a {
+        margin-top: 0;
+    }
 }

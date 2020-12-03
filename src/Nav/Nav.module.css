@@ -1,16 +1,39 @@
 .nav {
     margin: 20px auto 10px;
-    width: var(--desktop-width)
+    width: 320px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        width: 768px;
+        display: block;
+    }
+}
+
+@media (min-width: 1160px) {
+    .nav {
+        width: 1160px;
+    }
 }
 
 .usermenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 18px;
 }
 
+@media (min-width: 768px) {
+    .usermenu {
+        justify-content: space-between;
+    }
+}
+
 .searchform__input {
+    display: none;
     padding-left: 20px;
     height: 40px;
     width: 300px;
@@ -20,12 +43,24 @@
     color: var(--basic-grey-light);
 }
 
+@media (min-width: 1160px) {
+    .searchform__input {
+        display: inline-block;
+    }
+}
+
 .usermenu ul {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     list-style: none;
+}
+
+@media (min-width: 768px) {
+    .usermenu ul {
+        display: flex;
+    }
 }
 
 .usermenu li:not(:first-child) {
@@ -49,25 +84,49 @@
     color: var(--basic-grey-light);
 }
 
-
 .usermenu a:hover i,
 .usermenu a:active i {
     color: var(--accent-red);
+}
+
+.usermenu a img {
+    height: 33px;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+    .usermenu a img {
+        width: 217px;
+        height: 48px;
+    }
 }
 
 .mainnav {
     margin-top: 15px;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .mainnav {
+        justify-content: initial;
+    }
 }
 
 .mainnav ul {
     padding: 0;
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     list-style: none;
+}
+
+@media (min-width: 768px) {
+    .mainnav ul {
+        display: flex;
+    }
 }
 
 .mainnav li:not(:last-child) {
@@ -85,13 +144,18 @@
 }
 
 .mainnav button {
-    margin-right: 20px;
     padding: 0 15px;
     height: 30px;
     border: 1px solid var(--basic-grey-light);
     border-radius: 5px;
     background-color: var(--transparent);
     color: var(--basic-grey-light)
+}
+
+@media (min-width: 768px) {
+    .mainnav button {
+        margin-right: 20px;
+    }
 }
 
 .mainnav button i {
