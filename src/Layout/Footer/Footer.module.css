@@ -37,6 +37,13 @@
 }
 
 .footer__copyright {
+    padding-left: 20px;
     margin-top: 20px;
     font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .footer__copyright {
+        padding: 0;
+    }
 }

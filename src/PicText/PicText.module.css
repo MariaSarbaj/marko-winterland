@@ -1,12 +1,17 @@
 .PicText__wrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
 }
 
+@media (min-width: 768px) {
+    .PicText__wrapper {
+        display: flex;
+    }
+}
+
 .PicText__title {
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     color: var(--basic-black);
     font-size: 32px;
     font-weight: 800;
@@ -25,4 +30,11 @@
 
 .PicText__img {
     margin: 20px auto 0;
+    width: 350px;
+}
+
+@media (min-width: 1160px) {
+    .PicText__img {
+        width: 550px;
+    }
 }

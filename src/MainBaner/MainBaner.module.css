@@ -3,30 +3,57 @@
     background-color: #f6f6f6;
 }
 
-.hero {
-    width: 50%;
+@media (min-width: 768px) {
+    .hero {
+        width: 50%;
+    }
 }
 
 .hero  h1 {
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     font-weight: bold;
     color: var(--accent-red);
-    font-size: 50px;
+    font-size: 32px;
     line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 1160px) {
+    .hero h1 {
+        font-size: 50px;
+    }
 }
 
 .hero h2 {
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     padding: 0;
     color: var(--basic-grey);
     font-size: 24px;
     font-weight: normal;
-    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .hero h2 {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1160px) {
+    .hero h2 {
+        text-align: left;
+        margin-bottom: 100px;
+    }
 }
 
 .hero p {
+    display: none;
     margin: 0;
     margin-top: 20px;
     padding: 0;
@@ -34,17 +61,29 @@
     font-size: 14px;
 }
 
+@media (min-width: 768px) {
+    .hero p {
+        display: block;
+    }
+}
+
 .hero a {
     margin-right: 10px;
     padding: 12px 30px;
     box-sizing: border-box;
     height: 40px;
-    display: inline-block;
+    display: none;
     vertical-align: middle;
     background-color: var(--accent-red);
     border-radius: 5px;
     color: var(--basic-white);
     font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .hero a {
+        display: inline-block;
+    }
 }
 
 .hero a:hover,
@@ -54,6 +93,8 @@
 
 .hero a:first-of-type {
     background-color: var(--basic-grey);
+    display: inline-block;
+    margin-bottom: 10px
 }
 
 .hero a:first-of-type:hover,
@@ -61,6 +102,30 @@
     background-color: var(--accent-red);
 }
 
+@media (min-width: 864px) {
+    .hero a:first-of-type {
+        margin-bottom: 0px
+    }
+}
+
 .mainBanner img {
-    margin-right: -55px;
+    width: 200px;
+}
+
+@media (min-width: 768px) {
+    .mainBanner img {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1160px) {
+    .mainBanner img {
+        width: 700px;
+    }
+}
+
+@media (min-width: 1270px) {
+    .mainBanner img {
+        margin-right: -55px;
+    }
 }
